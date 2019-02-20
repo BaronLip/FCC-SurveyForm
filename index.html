@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCC Survey</title>
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="title-bar">
+            <h1 id="title">
+                Table Tennis Profile
+            </h1>
+        </div>
+
+        <div class="survey-container">
+            <p id="description">
+                Let's build your profile
+            </p>
+        
+            <form id="survey-form" action="/submit opinion">
+                <div class="column1">
+                    <label for="Name" id="name-label">Name</label>
+                </div>
+                <div class="column2">
+                    <input type="text" id="name" placeholder="name">
+                </div>
+
+                <div class="column1">
+                    <label for="email-label">E-mail</label>
+                </div>
+                <div class="column2">
+                    <input type="email" id="email" placeholder="email" required>
+                </div>
+                
+                <div class="column1">
+                    <label for="number-label id="number-label">Experience</label>
+                </div>
+                <div class="column2">                
+                    <input type="number" id="years" placeholder="years of experience" min="1" max="50"  required>
+                </div>
+
+                <div class="dropdown">
+                    <div class="column1">
+                        <label for="ranking-guestimation">Choose your skill level
+                        </label>  
+                    </div>
+                    <div class="column2">
+                        <select name="ranking options" id="dropdown">
+                            <option value="newby">What's table tennis?</option>
+                            <option value="casual">I hit around at work.</option>
+                            <option value="recreational">Own a table and play regularly.</option>
+                            <option value="enthusiast">Go to local clubs and competitions.</option>
+                            <option value="amatuer">Recieve training & compete regularly.</option>
+                            <option value="professional">2200+ USATT rating.</option>
+                            <option value="international">Ma Long doesn't have a chance.</option>
+                        </select>
+                    </div>  
+                </div>
+
+                <div class="radio column1">
+                    <label for="frequency">How often do you train?
+                    </label>
+                </div>
+                
+                <div class="radio column2">
+                    <ul>
+                        <li>
+                            <label>Once a week
+                                <input class="buttons-left" name="frequency" type="radio" value="1">
+                            </label>
+                        </li>
+                        <li>
+                            <label>2 to 3 times week
+                                <input class="buttons-left" name="frequency" type="radio" value="2">
+                            </label>
+                        </li>
+                        <li>    
+                            <label>4 to 5 times a week
+                                <input class="buttons-left" name="frequency" type="radio" value="3">
+                            </label>
+                        </li>
+                            <label>I eat, sleep and shit table tennis
+                                <input class="buttons-left" name="frequency" type="radio" value="4">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="checkbox column1">
+                    <label for="style">What's your style?</label>
+                </div>
+
+                <div class="checkbox column2">
+                    <ul>
+                        <li>
+                            <label>Shakehand
+                                <input class="buttons-left" name="style" type="checkbox" value="1">
+                            </label>
+                        </li>
+                        <li>
+                            <label>Chinese Penhold
+                                <input class="buttons-left" name="style" type="checkbox" value="2">
+                            </label>
+                        </li>
+                        <li>
+                            <label>Japanese Penhold
+                                    <input class="buttons-left" name="style" type="checkbox" value="3">
+                            </label>
+                        </li>
+                        <li>
+                            <label>Seemiller Grip
+                                    <input class="buttons-left" name="style" type="checkbox" value="4">
+                            </label>
+                        </li>
+                        <li>
+                            <label>Unique F'd up style
+                                    <input class="buttons-left" name="style" type="checkbox" value="5">
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <label for="details">Add any additional details here.
+                    </label>
+                    <div>
+                        <textarea name="details" id="details" placeholder="tell us crazy you really are" cols="30" rows="10">
+                        </textarea>
+                    </div>
+                </div>
+                <button id="submit" type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

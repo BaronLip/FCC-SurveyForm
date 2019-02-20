@@ -1,0 +1,94 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: darkorchid;
+    font-family: 'Rubik', sans-serif;
+}
+
+main {
+    /* display: flex; */
+
+    margin: auto;
+    min-width: 360px;
+}
+
+.title-bar {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+h1 {
+    display: block;
+    font-weight: 500;
+    color: white; 
+}
+
+.survey-container {
+    max-width: 66vw;
+    background-color: hotpink;
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.survey-container {
+    color: rgb(69, 0, 78);
+}
+
+#description {
+    display: block;
+}
+
+p {
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: white; 
+}
+
+.column1 {
+    display: inline-block;
+    text-align: right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    /* margin-top: 10px; */
+}
+
+.column2 {
+    display: inline-block;
+    text-align: left;
+    width: 50%;
+    vertical-align: center;
+}
+
+.dropdown {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* How often do you train? Radio buttons */
+ul {
+    list-style: none;
+    margin-top: 5px;
+    padding: 0;
+}
+
+.buttons-left {
+    float: left;
+    margin-right: 8px;        
+}
+
+button {
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
